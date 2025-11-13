@@ -12,9 +12,11 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'data'), glob.glob('data/*bin')),
-        (os.path.join('share', package_name, 'weights'), ['weights/epoch_160.pth'])
+        (os.path.join('share', package_name, 'weights'), ['weights/epoch_160.pth']),
+        # Removed the launch files line since launch files are in workspace root, not package
+        # If you want to install launch files, move them to this package and uncomment:
+        # (os.path.join('share', package_name, 'launch'), glob.glob('launch/*.launch.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
