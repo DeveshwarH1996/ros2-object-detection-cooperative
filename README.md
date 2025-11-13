@@ -55,7 +55,15 @@ rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install
 ```
 
-4. Source the workspace:
+4. Build the CUDA packages in the build space. 
+```bash
+cp -r src/lidar_object_detection/lidar_object_detection/ops/iou3d build/lidar_object_detection/lidar_object_detection/ops/
+cp -r src/lidar_object_detection/lidar_object_detection/ops/voxelization build/lidar_object_detection/lidar_object_detection/ops/
+cd build/lidar_object_detection/lidar_object_detection/ops
+python setup.py build_ext --inplace
+```
+
+5. Source the workspace:
 ```bash
 source install/setup.bash
 ```
