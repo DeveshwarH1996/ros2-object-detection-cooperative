@@ -1,6 +1,6 @@
 # ROS 2 Cooperative Object Detection
 
-A ROS 2 workspace for lidar-based object detection and cooperative perception using multiple models built on the OpenCOOD framework and single-vehicle object detection models. This project provides both single-vehicle object detection and multi-vehicle cooperative perception capabilities for V2X (Vehicle-to-Everything) applications.
+A ROS 2 workspace for lidar-based object detection and cooperative perception using multiple models built on the OpenCOOD framework and single-vehicle object detection models. This project provides both single-vehicle object detection and multi-vehicle cooperative perception capabilities for V2X (Vehicle-to-Everything) applications. This project was developed from a fork of [ragibarnab's ros2-lidar-object-detection](https://github.com/ragibarnab/ros2-lidar-object-detection)
 
 ![](./demo/demo.gif)
 
